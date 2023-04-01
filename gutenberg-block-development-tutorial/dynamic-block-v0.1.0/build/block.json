@@ -1,0 +1,39 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "wz-tutorial/dynamic-block",
+  "version": "0.1.0",
+  "title": "Example Dynamic Block",
+  "category": "widgets",
+  "icon": "smiley",
+  "description": "Example Dynamic Block",
+  "supports": {
+    "html": false
+  },
+  "attributes": {
+    "postsToShow": {
+      "type": "number",
+      "default": 5
+    },
+    "heading": {
+      "type": "string"
+    },
+    "showHeading": {
+      "type": "boolean"
+    },
+    "order": {
+      "type": "string",
+      "default": "desc"
+    },
+    "orderBy": {
+      "type": "string",
+      "default": "date"
+    }
+  },
+  "example": {},
+  "textdomain": "dynamic-block",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php"
+}
