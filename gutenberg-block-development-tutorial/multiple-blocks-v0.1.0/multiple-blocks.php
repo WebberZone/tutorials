@@ -35,7 +35,7 @@ function wz_multiple_blocks_register_blocks() {
 		if ( ! empty( $render_callback ) ) {
 			$args['render_callback'] = $render_callback;
 		}
-		register_block_type( __DIR__ . '/build/' . $dir, $args );
+		register_block_type( __DIR__ . '/blocks/build/' . $dir, $args );
 	}
 }
 add_action( 'init', 'wz_multiple_blocks_register_blocks' );
