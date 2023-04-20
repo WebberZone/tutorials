@@ -1,0 +1,23 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-wz-tutorial-basic-block {
+	padding: 0.75rem 1.25rem;
+	margin-bottom: 1rem;
+	padding: 2px;
+	background-color: #FFBB00;
+	color: #000036;
+
+	&.is-style-red {
+		background-color: #ff4400;
+		color: #ffffff;
+	}
+	&.is-style-green {
+		background-color: #03210a;
+		color: #ffffff;
+	}
+}

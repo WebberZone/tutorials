@@ -1,0 +1,28 @@
+{
+	"name": "multiple-blocks",
+	"version": "0.1.0",
+	"description": "Example block scaffolded with Create Block tool.",
+	"author": "webberzone, ajay",
+	"license": "GPL-2.0-or-later",
+	"homepage": "https://webberzone.com/",
+	"main": "blocks/build/index.js",
+	"scripts": {
+		"start": "wp-scripts start --webpack-src-dir=blocks/src/ --output-path=blocks/build/",
+		"build": "wp-scripts build --webpack-src-dir=blocks/src/ --output-path=blocks/build/",
+		"start:static": "wp-scripts start --webpack-src-dir=blocks/src/static --output-path=blocks/build/static",
+		"build:static": "wp-scripts build --webpack-src-dir=blocks/src/static --output-path=blocks/build/static",
+		"start:dynamic": "wp-scripts start --webpack-src-dir=blocks/src/dynamic --output-path=blocks/build/dynamic",
+		"build:dynamic": "wp-scripts build --webpack-src-dir=blocks/src/dynamic --output-path=blocks/build/dynamic",
+		"format": "wp-scripts format",
+		"lint:css": "wp-scripts lint-style",
+		"lint:js": "wp-scripts lint-js",
+		"packages-update": "wp-scripts packages-update",
+		"plugin-zip": "wp-scripts plugin-zip"
+	},
+	"devDependencies": {
+		"@wordpress/scripts": "^26.2.0"
+	},
+	"dependencies": {
+		"classnames": "^2.3.2"
+	}
+}
