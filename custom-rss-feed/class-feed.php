@@ -22,7 +22,7 @@ class Feed {
 	}
 
 	/**
-	 * Add custom feeds for the overall and daily popular posts.
+	 * Add a custom feed.
 	 */
 	public function add_custom_feed() {
 
@@ -40,7 +40,7 @@ class Feed {
 	public function feed_callback() {
 		add_filter( 'pre_option_rss_use_excerpt', '__return_zero' );
 
-		$template = locate_template( 'feed-rss2-popular-posts.php' );
+		$template = locate_template( 'feed-rss2-custom-post-type.php' );
 
 		if ( ! $template ) {
 			$template = __DIR__ . '/feed-rss2-custom-post-type.php';
